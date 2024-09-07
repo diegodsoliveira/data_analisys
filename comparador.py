@@ -144,9 +144,6 @@ def processar_e_comparar():
     # Concatenar os dados de IOF ao DataFrame df_diego_cris
     df_diego_cris = pd.concat([df_diego_cris, df_iof_rafael])
     
-    # # Calcular a soma da coluna 'amount'
-    # soma_amount = calcular_soma(df_diego_cris)
-
     # Salvar o arquivo combinado como Excel
     arquivo_excel = 'fatura_diego_e_cris.xlsx'
     with pd.ExcelWriter(arquivo_excel) as writer:
